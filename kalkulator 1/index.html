@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <script>
+
+const number1 = parseFloat(prompt('Unesite prvi broj: '));
+const operator = prompt('Unesite operator (  +, -, * ili / ): ');
+const number2 = parseFloat(prompt('Unesite drugi broj: '));
+let result
+    result= Number (result);
+switch(operator) {
+    case '+':
+         result = number1 + number2;
+        document.write(number1 + " " +  "+" + " " + number2 + " " + "=" + " " +  result);
+        break;
+
+    case '-':
+         result = number1 - number2;
+        document.write(number1 + " " +  "-" + " " + number2 + " " + "=" + " " +  result);
+        break;
+
+    case '*':
+         result = number1 * number2;
+         document.write(number1 + " " +  "*" + " " + number2 + " " + "=" + " " +  result);
+        break;
+
+    case '/':
+         result = number1 / number2;
+         document.write(number1 + " " +  "/" + " " + number2 + " " + "=" + " " +  result);
+        break;
+    
+    default:
+        alert('Nepostojeci operator');
+        break;
+}
+
+    </script>
+</body>
+</html>
